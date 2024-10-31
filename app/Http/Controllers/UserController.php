@@ -17,7 +17,8 @@ class UserController extends Controller
      */
     public function dashboard(Request $request): Factory|View|Application
     {
-        return view('dashboard');
+        flash()->success('Your order has been placed.');
+        return view('backend.pages.dashboard.dashboard');
     }
 
     /**
