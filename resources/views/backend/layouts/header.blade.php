@@ -4,14 +4,15 @@
 {{--        App::setLocale($lanCode);--}}
 {{--    }--}}
 {{--@endphp--}}
-<nav class="border-b border-slate-100 dark:bg-zinc-800 print:hidden flex items-center fixed top-0 right-0 left-0 bg-white z-10 dark:border-zinc-700">
+<nav
+    class="border-b border-slate-100 dark:bg-zinc-800 print:hidden flex items-center fixed top-0 right-0 left-0 bg-white z-10 dark:border-zinc-700">
 
     <div class="flex items-center justify-between w-full">
         <div class="topbar-brand flex items-center">
             <div
                 class="navbar-brand flex items-center justify-between shrink px-5 h-[70px] border-r bg-slate-50 border-r-gray-50 dark:border-zinc-700 dark:bg-zinc-800">
                 <a href="#" class="flex items-center font-bold text-lg  dark:text-white">
-{{--                    <img src="{{ asset("backend/assets/images/copy-auth-bg.jpg") }}" alt="" class="ltr:mr-2 rtl:ml-2 inline-block mt-1 h-16"/>--}}
+                    {{--                    <img src="{{ asset("backend/assets/images/copy-auth-bg.jpg") }}" alt="" class="ltr:mr-2 rtl:ml-2 inline-block mt-1 h-16"/>--}}
                     {{--                    <span class="hidden xl:block align-middle">Biddyapith</span>--}}
                 </a>
             </div>
@@ -65,31 +66,34 @@
                 <button class="btn border-0 py-0 dropdown-toggle px-4 h-[70px]" type="button" aria-expanded="false"
                         data-dropdown-toggle="navNotifications">
                     @if(\Illuminate\Support\Facades\Session::get('language')==='en')
-                        <img src="{{ asset("backend/assets/images/flags/us.svg") }}" alt="" class="h-4 selected" id="header-lang-img" >
+                        <img src="{{ asset("backend/assets/images/flags/us.svg") }}" alt="" class="h-4 selected"
+                             id="header-lang-img">
                     @elseif(\Illuminate\Support\Facades\Session::get('language')==='bn')
-                        <img src="{{ asset("backend/assets/images/flags/bangladesh.svg") }}" alt="user-image" class="h-4 selected">
+                        <img src="{{ asset("backend/assets/images/flags/bangladesh.svg") }}" alt="user-image"
+                             class="h-4 selected">
                     @else
-                        <img src="{{ asset("backend/assets/images/flags/us.svg") }}" alt="" class="h-4 selected" id="header-lang-img" >
+                        <img src="{{ asset("backend/assets/images/flags/us.svg") }}" alt="" class="h-4 selected"
+                             id="header-lang-img">
                     @endif
                     {{--                        @dd(\Illuminate\Support\Facades\App::getLocale());--}}
                 </button>
                 <div
                     class="dropdown-menu absolute -left-24 z-50 hidden w-40 list-none rounded bg-white shadow dark:bg-zinc-800"
                     id="navNotifications">
-{{--                    <ul class="border border-gray-50 dark:border-gray-700" aria-labelledby="navNotifications">--}}
-{{--                        <li>--}}
-{{--                            <a href="{{route('changeLang','en')}}"--}}
-{{--                               class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white">--}}
-{{--                                <img src="{{ asset("backend/assets/images/flags/us.svg") }}" alt="user-image" class="mr-1 inline-block h-3">--}}
-{{--                                <span class="align-middle">English</span></a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="{{route('changeLang','bn')}}"--}}
-{{--                               class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white">--}}
-{{--                                <img src="{{ asset("backend/assets/images/flags/bangladesh.svg") }}" alt="user-image" class="mr-1 inline-block h-3">--}}
-{{--                                <span class="align-middle">Bangle</span></a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
+                    {{--                    <ul class="border border-gray-50 dark:border-gray-700" aria-labelledby="navNotifications">--}}
+                    {{--                        <li>--}}
+                    {{--                            <a href="{{route('changeLang','en')}}"--}}
+                    {{--                               class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white">--}}
+                    {{--                                <img src="{{ asset("backend/assets/images/flags/us.svg") }}" alt="user-image" class="mr-1 inline-block h-3">--}}
+                    {{--                                <span class="align-middle">English</span></a>--}}
+                    {{--                        </li>--}}
+                    {{--                        <li>--}}
+                    {{--                            <a href="{{route('changeLang','bn')}}"--}}
+                    {{--                               class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50/50 dark:text-gray-200 dark:hover:bg-zinc-600/50 dark:hover:text-white">--}}
+                    {{--                                <img src="{{ asset("backend/assets/images/flags/bangladesh.svg") }}" alt="user-image" class="mr-1 inline-block h-3">--}}
+                    {{--                                <span class="align-middle">Bangle</span></a>--}}
+                    {{--                        </li>--}}
+                    {{--                    </ul>--}}
                 </div>
             </div>
 
@@ -272,32 +276,33 @@
                             class="flex items-center px-4 py-5 border-x border-gray-50 bg-gray-50/30 dropdown-toggle dark:bg-zinc-700 dark:border-zinc-600 dark:text-gray-100"
                             id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="true">
-                        <img class="h-8 w-8 rounded-full ltr:xl:mr-2 rtl:xl:ml-2" src="{{ asset("backend/assets/images/users/avatar-1.jpg") }}"
+                        <img class="h-8 w-8 rounded-full ltr:xl:mr-2 rtl:xl:ml-2"
+                             src="{{ asset("backend/assets/images/users/avatar-1.jpg") }}"
                              alt="Header Avatar">
-{{--                        <span class="fw-medium hidden xl:block">{{ Auth::user()->name }}</span>--}}
+                        {{--                        <span class="fw-medium hidden xl:block">{{ Auth::user()->name }}</span>--}}
                         <i class="mdi mdi-chevron-down align-bottom hidden xl:block"></i>
                     </button>
                     <div
                         class="dropdown-menu absolute top-0 ltr:-left-3 rtl:-right-3 z-50 hidden w-40 list-none rounded bg-white shadow dark:bg-zinc-800"
                         id="profile/log">
                         <div class="border border-gray-50 dark:border-zinc-600" aria-labelledby="navNotifications">
-                            {{--                            <div class="dropdown-item dark:text-gray-100">--}}
-                            {{--                                <a class="px-3 py-2 hover:bg-gray-50/50 block dark:hover:bg-zinc-700/50"--}}
-                            {{--                                   href="{{ route('profile.edit') }}">--}}
-                            {{--                                    <i class="mdi mdi-face-man text-16 align-middle mr-1"></i> Profile--}}
-                            {{--                                </a>--}}
-                            {{--                            </div>--}}
+                            <div class="dropdown-item dark:text-gray-100">
+                                <a class="px-3 py-2 hover:bg-gray-50/50 block dark:hover:bg-zinc-700/50"
+                                   href="{{ route('profile.edit') }}">
+                                    <i class="mdi mdi-face-man text-16 align-middle mr-1"></i> Profile
+                                </a>
+                            </div>
                             <hr class="border-gray-50 dark:border-gray-700">
                             <div class="dropdown-item dark:text-gray-100">
-{{--                                <form method="POST" action="{{ route('logout') }}">--}}
-{{--                                    @csrf--}}
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
 
-{{--                                    <x-responsive-nav-link :href="route('logout')"--}}
-{{--                                                           onclick="event.preventDefault();--}}
-{{--                                        this.closest('form').submit();">--}}
-{{--                                        {{ __('Log Out') }}--}}
-{{--                                    </x-responsive-nav-link>--}}
-{{--                                </form>--}}
+                                    <x-responsive-nav-link :href="route('logout')"
+                                                           onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-responsive-nav-link>
+                                </form>
                             </div>
                         </div>
                     </div>
