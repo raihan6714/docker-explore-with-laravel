@@ -2,11 +2,21 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('frontend.pages.home.index');
-});
+//Route::get('/', function () {
+//    return view('frontend.pages.home.index');
+//});
+Route::get('/',[HomeController::class,'home'])->name('home');
+Route::get('/shop',[HomeController::class,'shop'])->name('shop');
+Route::get('/blog',[HomeController::class,'blog'])->name('blog');
+Route::get('/about',[HomeController::class,'about'])->name('about');
+Route::get('/appointment',[HomeController::class,'appointment'])->name('appointment');
+Route::get('/team',[HomeController::class,'team'])->name('team');
+Route::get('/contact',[HomeController::class,'contact'])->name('contact');
+Route::get('/faqs',[HomeController::class,'faqs'])->name('faqs');
+Route::get('/error',[HomeController::class,'error'])->name('error');
 
 Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
