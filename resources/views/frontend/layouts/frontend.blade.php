@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Pet Haven || Pet Care Services HTML Template">
 
-    <title>Pet Haven</title>
+    <title>@yield('title')</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('frontend/assets/media/favicon.png')}} ">
@@ -59,11 +59,15 @@
 
 <!-- Main Wrapper Start -->
 <div id="scroll-container">
-    @include('frontend.layouts.header')
+    @if(!isset($hideHeaderFooter))
+        @include('frontend.layouts.header')
+    @endif
 
     @yield('content')
 
-    @include('frontend.layouts.footer')
+    @if(!isset($hideHeaderFooter))
+        @include('frontend.layouts.footer')
+    @endif
 </div>
 <!-- Main Wrapper End -->
 
@@ -76,7 +80,7 @@
     <div class="mobile-nav__content">
         <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
         <div class="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="{{asset('frontend/assets/media/logo.png')}} " alt=""></a>
+            <a href="{{ url('/') }}" aria-label="logo image"><img src="{{asset('frontend/assets/media/logo.png')}} " alt=""></a>
         </div>
         <div class="mobile-nav__container"></div>
         <ul class="mobile-nav__contact list-unstyled">
@@ -106,12 +110,12 @@
     </div>
     <ul class="product-list">
         <li class="product-item mb-24">
-            <a href="shop.html" class="image-box">
+            <a href="{{ route('shop') }}" class="image-box">
                 <img src="{{asset('frontend/assets/media/products/shop-sidebar-1.png')}} " alt="" class="br-8">
             </a>
             <div class="content-box">
                 <div class="empty">
-                    <a href="shop.html"><h6 class="fw-700 mb-8">Puppy Day Care</h6></a>
+                    <a href="{{ route('shop') }}"><h6 class="fw-700 mb-8">Puppy Day Care</h6></a>
                     <h6 class="fw-600 dark-gray mb-16">$80.00</h6>
                     <div class="quantity quantity-wrap">
                         <div class="input-area quantity-wrap">
@@ -129,12 +133,12 @@
         </li>
         <li class="hr-line line-2 mb-24"></li>
         <li class="product-item mb-24">
-            <a href="shop.html" class="image-box">
+            <a href="{{ route('shop') }}" class="image-box">
                 <img src="{{asset('frontend/assets/media/products/shop-sidebar-2.png')}} " alt="" class="br-8">
             </a>
             <div class="content-box">
                 <div class="empty">
-                    <a href="shop.html"><h6 class="fw-700 mb-8">Puppy Grooming</h6></a>
+                    <a href="{{ route('shop') }}"><h6 class="fw-700 mb-8">Puppy Grooming</h6></a>
                     <h6 class="fw-600 dark-gray mb-16">$40.00</h6>
                     <div class="quantity quantity-wrap">
                         <div class="input-area quantity-wrap">
@@ -152,12 +156,12 @@
         </li>
         <li class="hr-line line-2 mb-24"></li>
         <li class="product-item mb-24">
-            <a href="shop.html" class="image-box">
+            <a href="{{ route('shop') }}" class="image-box">
                 <img src="{{asset('frontend/assets/media/products/shop-sidebar-1.png')}} " alt="" class="br-8">
             </a>
             <div class="content-box">
                 <div class="empty">
-                    <a href="shop.html"><h6 class="fw-700 mb-8">Puppy Day Care</h6></a>
+                    <a href="{{ route('shop') }}"><h6 class="fw-700 mb-8">Puppy Day Care</h6></a>
                     <h6 class="fw-600 dark-gray mb-16">$70.00</h6>
                     <div class="quantity quantity-wrap">
                         <div class="input-area quantity-wrap">
@@ -180,11 +184,11 @@
     </div>
     <div class="hr-line line-2 mb-24"></div>
     <div class="action-buttons p-24">
-        <a href="reservation.html" class="cus-btn">
+        <a href="{{ route('appointment') }}" class="cus-btn">
             <span class="text">Reservation</span>
             <span class="circle"></span>
         </a>
-        <a href="checkout.html" class="cus-btn">
+        <a href="{{ route('checkout') }}" class="cus-btn">
             <span class="text">Checkout</span>
             <span class="circle"></span>
         </a>
@@ -199,7 +203,7 @@
 <script src="{{asset('frontend/assets/js/vendor/slick.min.js')}} "></script>
 <script src="{{asset('frontend/assets/js/vendor/wow.js')}} "></script>
 <script src="{{asset('frontend/assets/js/vendor/video.js')}} "></script>
-
+<script src="{{asset('frontend/assets/js/vendor/jquery-validator.js')}}"></script>
 <script src="{{asset('frontend/assets/js/app.js')}} "></script>
 </body>
 

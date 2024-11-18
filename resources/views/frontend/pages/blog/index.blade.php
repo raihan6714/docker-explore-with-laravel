@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 d-sm-block d-none">
                         <div class="title-image text-end">
-                            <img src="assets/media/backgrounds/banner-image.png" alt="">
+                            <img src="{{asset('frontend/assets/media/backgrounds/banner-image.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -26,9 +26,9 @@
     <!-- ARTICLES SECTION START -->
     <section class="article-section pt-40 pb-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="" class="d-sm-block d-none">
         </div>
         <div class="container-fluid-2">
             <div class="blog-topbar mb-40">
@@ -77,9 +77,9 @@
             <div class="article-wrapper">
                 <div class="row row-gap-4">
                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <a href="blog-detail.html" class="article-block">
+                        <a href="{{ route('blog-detail') }}" class="article-block">
                             <div class="image-box shine mb-32">
-                                <img src="assets/media/blog/blog-1.png" alt="">
+                                <img src="{{asset('frontend/assets/media/blog/blog-1.png')}}" alt="">
                             </div>
                             <div class="content-box">
                                 <div class="date-label dark-gray mb-16">30 Aug 2024</div>
@@ -106,9 +106,9 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <a href="blog-detail.html" class="article-block">
+                        <a href="{{ route('blog-detail') }}" class="article-block">
                             <div class="image-box shine mb-32">
-                                <img src="assets/media/blog/blog-2.png" alt="">
+                                <img src="{{asset('frontend/assets/media/blog/blog-2.png')}}" alt="">
                             </div>
                             <div class="content-box">
                                 <div class="date-label dark-gray mb-16">30 Aug 2024</div>
@@ -135,9 +135,9 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <a href="blog-detail.html" class="article-block">
+                        <a href="{{ route('blog-detail') }}" class="article-block">
                             <div class="image-box shine mb-32">
-                                <img src="assets/media/blog/blog-3.png" alt="">
+                                <img src="{{asset('frontend/assets/media/blog/blog-3.png')}}" alt="">
                             </div>
                             <div class="content-box">
                                 <div class="date-label dark-gray mb-16">30 Aug 2024</div>
@@ -164,9 +164,9 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <a href="blog-detail.html" class="article-block">
+                        <a href="{{ route('blog-detail') }}" class="article-block">
                             <div class="image-box shine mb-32">
-                                <img src="assets/media/blog/blog-4.png" alt="">
+                                <img src="{{asset('frontend/assets/media/blog/blog-4.png')}}" alt="">
                             </div>
                             <div class="content-box">
                                 <div class="date-label dark-gray mb-16">30 Aug 2024</div>
@@ -193,9 +193,9 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <a href="blog-detail.html" class="article-block">
+                        <a href="{{ route('blog-detail') }}" class="article-block">
                             <div class="image-box shine mb-32">
-                                <img src="assets/media/blog/blog-5.png" alt="">
+                                <img src="{{asset('frontend/assets/media/blog/blog-5.png')}}" alt="">
                             </div>
                             <div class="content-box">
                                 <div class="date-label dark-gray mb-16">30 Aug 2024</div>
@@ -222,9 +222,9 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <a href="blog-detail.html" class="article-block">
+                        <a href="{{ route('blog-detail') }}" class="article-block">
                             <div class="image-box shine mb-32">
-                                <img src="assets/media/blog/blog-6.png" alt="">
+                                <img src="{{asset('frontend/assets/media/blog/blog-6.png')}}" alt="">
                             </div>
                             <div class="content-box">
                                 <div class="date-label dark-gray mb-16">30 Aug 2024</div>

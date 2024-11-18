@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 d-sm-block d-none">
                         <div class="title-image text-end">
-                            <img src="assets/media/backgrounds/banner-image.png" alt="">
+                            <img src="{{asset('frontend/assets/media/backgrounds/banner-image.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -26,9 +26,9 @@
     <!-- ABOUT SECTION START -->
     <section class="about-sec py-80">
         <div class="elements">
-            <img src="assets/media/vector/cat-vector.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/cat-vector.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row align-items-center row-gap-4">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
-                    <img src="assets/media/images/about-1.png" alt="" class="br-64">
+                    <img src="{{asset('frontend/assets/media/images/about-1.png')}}" alt="" class="br-64">
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12">
                     <div class="about-video-wrapper">
@@ -74,7 +74,7 @@
                                 id. Maecenas eu lorem quisesdoi massal molestie. Cras eu
                                 odio sit amet ipsum cursus for that gone pellentesquea.
                             </p>
-                            <a href="reservation.html" class="cus-btn primary">
+                            <a href="{{ route('appointment') }}" class="cus-btn primary">
                                 <span class="text">Appointment</span>
                                 <span class="circle"></span>
                             </a>
@@ -83,8 +83,8 @@
                             <div class="text-box">
                                 <h5 class="fw-700 medium-black mb-8">Drop In Visits</h5>
                                 <p class="fw-500 medium-black mb-16">Play this video</p>
-                                <a href="assets/media/pet-care.mp4" class="play-btn">
-                                    <img src="assets/media/vector/play-btn.png" alt="">
+                                <a href="{{asset('frontend/assets/media/pet-care.mp4')}}" class="play-btn">
+                                    <img src="{{asset('frontend/assets/media/vector/play-btn.png')}}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
     <!-- SERVICES SECTION START -->
     <section class="service-sec py-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="heading text-center mb-48">
@@ -112,7 +112,7 @@
             </div>
             <div class="row row-gap-4">
                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                    <a href="service-detail.html" class="service-card h-100 w-100 bg-ter br-32">
+                    <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 bg-ter br-32">
                         <div class="icon-box mb-24">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                                  fill="none">
@@ -141,7 +141,7 @@
                                     d="M62.2051 46.9028C62.3779 46.9863 62.5639 47.0278 62.75 47.0278C62.9814 47.0278 63.2114 46.9638 63.414 46.8369C63.7788 46.6084 64 46.2085 64 45.7778V39.8344C64 39.355 63.7256 38.9175 63.2934 38.709L44.456 29.6118V26.0307H45.8022C46.4922 26.0307 47.0522 25.4712 47.0522 24.7807V19.747C47.0522 19.0566 46.4922 18.497 45.8022 18.497H43.6396V14.7095C44.9189 14.3403 46.0254 13.416 46.5737 12.0937C47.5293 9.7866 46.4302 7.13182 44.123 6.17576C41.8164 5.2202 39.1616 6.31932 38.2056 8.62644C37.25 10.9336 38.3491 13.5879 40.6562 14.5439C40.8159 14.6103 40.977 14.6655 41.1396 14.7124V18.497H33.3354V11.6186C33.6943 11.7705 34.0542 11.8364 34.4292 11.6845C34.7363 11.5605 34.9819 11.3193 35.1113 11.0137L37.874 4.50096C38.1435 3.8657 37.8472 3.13182 37.2114 2.86229L30.6987 0.0991027C30.3935 -0.0302919 30.0493 -0.0332215 29.7422 0.0912902C29.4346 0.215314 29.1894 0.456524 29.0601 0.7617L26.2969 7.27488C26.0273 7.91014 26.3242 8.64402 26.9595 8.91355L30.8354 10.5581V18.497H23.1748V15.7944H25.6938C26.1401 15.7944 26.5527 15.5561 26.7764 15.1694C26.9995 14.7827 26.9995 14.3061 26.7764 13.9194L23.0073 7.39158C22.7837 7.00486 22.3711 6.76658 21.9248 6.76658C21.478 6.76658 21.0654 7.00486 20.8423 7.39158L17.0732 13.9194C16.8501 14.3061 16.8501 14.7827 17.0732 15.1694C17.2964 15.5561 17.709 15.7944 18.1558 15.7944H20.6748V18.497H18.4858C17.7954 18.497 17.2358 19.0566 17.2358 19.747V24.7807C17.2358 25.4712 17.7954 26.0307 18.4858 26.0307H19.5439V29.6118L15.0874 31.7632C14.4658 32.0634 14.2051 32.8105 14.5054 33.4326C14.8052 34.0542 15.5527 34.3149 16.1743 34.0146L19.5439 32.3877V35.5302L2.5 43.7837V40.6186L6.04101 38.9082C6.6626 38.6079 6.92334 37.8603 6.62256 37.2387C6.32275 36.6172 5.57519 36.3569 4.95361 36.6572L0.706055 38.709C0.274414 38.9175 0 39.355 0 39.8344V45.7778C0 46.208 0.221191 46.6084 0.585937 46.8369C0.788086 46.9638 1.01855 47.0278 1.25 47.0278C1.43603 47.0278 1.62207 46.9863 1.79492 46.9028L3.17773 46.2334V61.5H1.25C0.55957 61.5 0 62.0595 0 62.75C0 63.4404 0.55957 64 1.25 64H62.75C63.4404 64 64 63.4404 64 62.75C64 62.0595 63.4404 61.5 62.75 61.5H60.8223V46.2334L62.2051 46.9028ZM40.5151 9.58348C40.8384 8.80271 41.5957 8.33103 42.3921 8.33103C42.6504 8.33103 42.9131 8.38084 43.166 8.48533C43.667 8.69285 44.0566 9.08299 44.2641 9.58396C44.4712 10.0845 44.4712 10.6357 44.2637 11.1367C43.8354 12.1699 42.6465 12.6626 41.6128 12.2344C40.5796 11.8061 40.0869 10.6167 40.5151 9.58348ZM30.873 2.88865L35.0845 4.67527L33.2978 8.8867L29.0864 7.10008L30.873 2.88865ZM21.9243 10.5166L23.5283 13.2944H20.3203L21.9243 10.5166ZM61.5 40.6186V43.7837L44.456 35.5307V32.3882L61.5 40.6186ZM19.7358 20.997H44.5522V23.5307H19.7358V20.997ZM5.67773 61.5V45.0229L5.9126 44.9087L19.5439 38.3086V61.5H5.67773ZM29.3965 61.5V52.4863H34.3423V61.5H29.3965ZM36.8423 61.5V51.2363C36.8423 50.5459 36.2822 49.9863 35.5923 49.9863H28.1465C27.456 49.9863 26.8965 50.5459 26.8965 51.2363V61.5H22.0439V26.0307H41.956V61.5H36.8423ZM58.3223 61.5H44.456V38.3086L58.3223 45.0229V61.5Z"
                                     fill="#15C7DE" />
                             </svg>
-                            <img src="assets/media/vector/foot-icon-1.png" alt="">
+                            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
                         </div>
                         <div class="content-box">
                             <h5 class="fw-600 mb-24">Puppy Daycare</h5>
@@ -162,7 +162,7 @@
                     </a>
                 </div>
                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                    <a href="service-detail.html" class="service-card h-100 w-100 card-2 bg-hex br-32">
+                    <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 card-2 bg-hex br-32">
                         <div class="icon-box mb-24">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                                  fill="none">
@@ -185,7 +185,7 @@
                                     d="M8.89652 20.2143C8.89652 17.7951 6.92827 15.8267 4.5089 15.8267C2.08952 15.8267 0.121399 17.7951 0.121399 20.2143C0.121399 22.6336 2.08965 24.602 4.50902 24.602C6.9284 24.602 8.89652 22.6337 8.89652 20.2143ZM1.9964 20.2143C1.9964 18.829 3.12352 17.7017 4.50902 17.7017C5.89452 17.7017 7.02165 18.8288 7.02165 20.2143C7.02165 21.5998 5.89452 22.727 4.50902 22.727C3.12352 22.727 1.9964 21.5998 1.9964 20.2143Z"
                                     fill="#9746DC" />
                             </svg>
-                            <img src="assets/media/vector/foot-icon-1.png" alt="">
+                            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
                         </div>
                         <div class="content-box">
                             <h5 class="fw-600 mb-24">Grooming</h5>
@@ -206,7 +206,7 @@
                     </a>
                 </div>
                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                    <a href="service-detail.html" class="service-card h-100 w-100 card-3 bg-quant br-32">
+                    <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 card-3 bg-quant br-32">
                         <div class="icon-box mb-24">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                                  fill="none">
@@ -229,7 +229,7 @@
                                     d="M32.034 23.0029C30.3068 23.0029 28.7904 24.1284 28.267 25.7379C27.0536 26.4709 26.2915 27.7977 26.2915 29.2347C26.2915 31.4864 28.1234 33.3182 30.375 33.3182H33.938C36.1898 33.3182 38.0215 31.4864 38.0215 29.2347C38.0215 27.7977 37.2594 26.471 36.046 25.7379C35.5225 24.1285 34.0063 23.0029 32.279 23.0029H32.034ZM34.3248 26.5552C34.3834 26.8509 34.5804 27.1002 34.8545 27.2256C35.6394 27.5845 36.1465 28.3731 36.1465 29.2349C36.1465 30.4526 35.1558 31.4434 33.938 31.4434H30.375C29.1573 31.4434 28.1665 30.4526 28.1665 29.2349C28.1665 28.3731 28.6736 27.5845 29.4584 27.2256C29.7324 27.1004 29.9296 26.8509 29.9881 26.5554C30.1808 25.5835 31.0411 24.878 32.0339 24.878H32.2789C33.2718 24.8779 34.1321 25.5832 34.3248 26.5552Z"
                                     fill="#DC385A" />
                             </svg>
-                            <img src="assets/media/vector/foot-icon-1.png" alt="">
+                            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
                         </div>
                         <div class="content-box">
                             <h5 class="fw-600 mb-24">Boarding</h5>
@@ -250,7 +250,7 @@
                     </a>
                 </div>
                 <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                    <a href="service-detail.html" class="service-card h-100 w-100 card-4 br-32">
+                    <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 card-4 br-32">
                         <div class="icon-box mb-24">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                                  fill="none">
@@ -273,7 +273,7 @@
                                     d="M34.9029 32.977H29.2424C28.7246 32.977 28.3049 33.3967 28.3049 33.9145V39.4979H22.7181C22.2004 39.4979 21.7806 39.9176 21.7806 40.4354V46.0929C21.7806 46.6106 22.2004 47.0304 22.7181 47.0304H28.3049V52.6137C28.3049 53.1315 28.7245 53.5512 29.2424 53.5512H34.9029C35.4206 53.5512 35.8404 53.1315 35.8404 52.6137V47.0304H41.4271C41.9449 47.0304 42.3646 46.6106 42.3646 46.0929V40.4354C42.3646 39.9176 41.945 39.4979 41.4271 39.4979H35.8404V33.9145C35.8403 33.3967 35.4206 32.977 34.9029 32.977ZM40.4896 41.3729V45.1554H34.9029C34.3851 45.1554 33.9654 45.5751 33.9654 46.0929V51.6762H30.1799V46.0929C30.1799 45.5751 29.7603 45.1554 29.2424 45.1554H23.6556V41.3729H29.2424C29.7601 41.3729 30.1799 40.9531 30.1799 40.4354V34.852H33.9654V40.4354C33.9654 40.9531 34.385 41.3729 34.9029 41.3729H40.4896Z"
                                     fill="#0095A0" />
                             </svg>
-                            <img src="assets/media/vector/foot-icon-1.png" alt="">
+                            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
                         </div>
                         <div class="content-box">
                             <h5 class="fw-600 mb-24">Veterinary</h5>
@@ -301,17 +301,17 @@
     <!-- TEAM SECTION START -->
     <section class="team-sec py-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="" class="d-sm-block d-none">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row align-items-center row-gap-4">
                 <div class="col-xl-6">
                     <div class="team-heading-container">
                         <div class="image-box w-100">
-                            <img src="assets/media/images/teddy-bear.png" alt="">
+                            <img src="{{asset('frontend/assets/media/images/teddy-bear.png')}}" alt="">
                         </div>
                         <div class="content-box">
                             <h2 class="fw-700 medium-black mb-24">
@@ -321,7 +321,7 @@
                                 We have an experienced qualified team to take care of your
                                 best friend
                             </p>
-                            <a href="team.html" class="cus-btn">
+                            <a href="{{ route('team') }}" class="cus-btn">
                                 <span class="text">View All Team</span>
                                 <span class="circle"></span>
                             </a>
@@ -331,7 +331,7 @@
                 <div class="col-xl-6">
                     <div class="team-slider">
                         <div class="team-block">
-                            <img src="assets/media/images/testimonials-1.png" alt="" class="br-48">
+                            <img src="{{asset('frontend/assets/media/images/testimonials-1.png')}}" alt="" class="br-48">
                             <div class="member-info">
                                 <h3 class="fw-700 medium-black mb-16">Susan Hardson</h3>
                                 <h6 class="light-gray mb-32">Dog Walker</h6>
@@ -375,7 +375,7 @@
                             </div>
                         </div>
                         <div class="team-block">
-                            <img src="assets/media/images/testimonials-2.png" alt="" class="br-48">
+                            <img src="{{asset('frontend/assets/media/images/testimonials-2.png')}}" alt="" class="br-48">
                             <div class="member-info">
                                 <h3 class="fw-700 medium-black mb-16">Aveline</h3>
                                 <h6 class="light-gray mb-32">Groomer Manager</h6>
@@ -419,7 +419,7 @@
                             </div>
                         </div>
                         <div class="team-block">
-                            <img src="assets/media/images/testimonials-3.png" alt="" class="br-48">
+                            <img src="{{asset('frontend/assets/media/images/testimonials-3.png')}}" alt="" class="br-48">
                             <div class="member-info">
                                 <h3 class="fw-700 medium-black mb-16">Jacqueline</h3>
                                 <h6 class="light-gray mb-32">Veterinary Assistant</h6>
@@ -472,9 +472,9 @@
     <!-- FAQ's SECTION START -->
     <section class="faqs-section py-80">
         <div class="elements">
-            <img src="assets/media/vector/cat-vector.png" alt="" class="d-sm-block d-none">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/cat-vector.png')}}" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row align-items-center row-gap-4">
@@ -539,7 +539,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
-                    <img src="assets/media/images/faq-image.png" alt="">
+                    <img src="{{asset('frontend/assets/media/images/faq-image.png')}}" alt="">
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="faq-container">
@@ -630,31 +630,27 @@
     <!-- TESTIMONIALS SECTION START -->
     <section class="testimonial-sec py-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row row-gap-4 justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-8 col-10">
                     <div class="map-wrapper">
                         <div class="map-image">
-                            <img src="assets/media/images/map.png" alt="">
+                            <img src="{{asset('frontend/assets/media/images/map.png')}}" alt="">
                             <div class="feedback-user">
-                                <a href="javascript:;" data-slide="1"><img src="assets/media/images/test-1.png"
-                                                                           alt=""></a>
-                                <a href="javascript:;" data-slide="2"><img src="assets/media/images/test-2.png"
-                                                                           alt=""></a>
-                                <a href="javascript:;" data-slide="3"><img src="assets/media/images/test-3.png"
-                                                                           alt=""></a>
-                                <a href="javascript:;" data-slide="4"><img src="assets/media/images/test-4.png"
-                                                                           alt=""></a>
+                                <a href="javascript:;" data-slide="1"><img src="{{asset('frontend/assets/media/images/test-1.png')}}" alt=""></a>
+                                <a href="javascript:;" data-slide="2"><img src="{{asset('frontend/assets/media/images/test-2.png')}}" alt=""></a>
+                                <a href="javascript:;" data-slide="3"><img src="{{asset('frontend/assets/media/images/test-3.png')}}" alt=""></a>
+                                <a href="javascript:;" data-slide="4"><img src="{{asset('frontend/assets/media/images/test-4.png')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="feedback-user-nav">
-                            <img src="assets/media/images/test-1.png" alt="">
-                            <img src="assets/media/images/test-2.png" alt="">
-                            <img src="assets/media/images/test-3.png" alt="">
-                            <img src="assets/media/images/test-4.png" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-1.png')}}" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-2.png')}}" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-3.png')}}" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-4.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -675,7 +671,7 @@
                                 Cras eu odio sit amet.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-7.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-7.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Rickey James</h6>
                                     <p class="fw-500">Chief of Staff</p>
@@ -693,7 +689,7 @@
                                 Cras eu odio sit amet.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-6.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-6.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Mary Jane</h6>
                                     <p class="fw-500">Chief of Staff</p>
@@ -711,7 +707,7 @@
                                 Cras eu odio sit amet.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-5.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-5.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Emma Claire</h6>
                                     <p class="fw-500">Chief of Staff</p>
@@ -729,7 +725,7 @@
                                 congue purus iaculison id.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-8.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-8.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Sophie Lynn</h6>
                                     <p class="fw-500">Chief of Staff</p>

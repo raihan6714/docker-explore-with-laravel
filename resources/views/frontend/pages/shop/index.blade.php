@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 d-sm-block d-none">
                         <div class="title-image text-end">
-                            <img src="assets/media/backgrounds/banner-image.png" alt="">
+                            <img src="{{asset('frontend/assets/media/backgrounds/banner-image.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -26,10 +26,10 @@
     <!-- SHOP SECTION START -->
     <section class="shop-wrapper py-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="" class="d-sm-block d-none">
         </div>
         <div class="container-fluid-2">
             <div class="row">
@@ -200,7 +200,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="product-card bg-hex">
                                 <a href="shop-detail.html" class="img-box justify-content-start shine">
-                                    <img src="assets/media/products/product-1-copy.png" alt="">
+                                    <img src="{{asset('frontend/assets/media/products/product-1-copy.png')}}" alt="">
                                 </a>
                                 <div class="text-box">
                                     <a href="shop-detail.html" class="title-1 h5 fw-600 mb-8">Doggy Food
@@ -234,7 +234,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="product-card bg-ter">
                                 <a href="shop-detail.html" class="img-box shine">
-                                    <img src="assets/media/products/product-2-copy.png" alt="" class="product-img">
+                                    <img src="{{asset('frontend/assets/media/products/product-2-copy.png')}}" alt="" class="product-img">
                                 </a>
                                 <div class="text-box">
                                     <a href="shop-detail.html" class="title-2 h5 fw-600 mb-8">Puppy Collar
@@ -268,7 +268,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="product-card bg-hex">
                                 <a href="shop-detail.html" class="img-box shine">
-                                    <img src="assets/media/products/product-3-copy.png" alt="" class="product-img">
+                                    <img src="{{asset('frontend/assets/media/products/product-3-copy.png')}}" alt="" class="product-img">
                                 </a>
                                 <div class="text-box">
                                     <a href="shop-detail.html" class="title-1 h5 fw-600 mb-8">Dog Bowl
@@ -302,7 +302,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="product-card bg-ter">
                                 <a href="shop-detail.html" class="img-box shine">
-                                    <img src="assets/media/products/product-4-copy.png" alt="" class="product-img">
+                                    <img src="{{asset('frontend/assets/media/products/product-4-copy.png')}}" alt="" class="product-img">
                                 </a>
                                 <div class="text-box">
                                     <a href="shop-detail.html" class="title-2 h5 fw-600 mb-8">Puppy House</a>
@@ -335,7 +335,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="product-card bg-hex">
                                 <a href="shop-detail.html" class="img-box shine">
-                                    <img src="assets/media/products/product-5.png" alt="">
+                                    <img src="{{asset('frontend/assets/media/products/product-5.png')}}" alt="">
                                 </a>
                                 <div class="text-box">
                                     <a href="shop-detail.html" class="title-1 h5 fw-600 mb-8">Plastic Basin
@@ -369,7 +369,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="product-card bg-ter">
                                 <a href="shop-detail.html" class="img-box shine">
-                                    <img src="assets/media/products/product-6.png" alt="" class="product-img">
+                                    <img src="{{asset('frontend/assets/media/products/product-6.png')}}" alt="" class="product-img">
                                 </a>
                                 <div class="text-box">
                                     <a href="shop-detail.html" class="title-2 h5 fw-600 mb-8">Home Workout

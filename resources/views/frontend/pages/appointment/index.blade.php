@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 d-sm-block d-none">
                         <div class="title-image text-end">
-                            <img src="assets/media/backgrounds/banner-image.png" alt="">
+                            <img src="{{asset('frontend/assets/media/backgrounds/banner-image.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -26,10 +26,10 @@
     <!-- RESERVATION SECTION START -->
     <section class="reservation-sec pt-40 pb-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="" class="d-sm-block d-none">
         </div>
         <div class="container-fluid-2">
             <div class="heading text-center mb-48">
@@ -50,7 +50,7 @@
                                 <input type="radio" name="petRadio" id="cat" value="true"
                                        class="wizard-form-radio" checked aria-invalid="false">
                                 <label for="cat">
-                                    <img src="assets/media/images/radio-icon-1.png" alt="">
+                                    <img src="{{asset('frontend/assets/media/images/radio-icon-1.png')}}" alt="">
                                     Cat
                                 </label>
                             </p>
@@ -58,7 +58,7 @@
                                 <input type="radio" name="petRadio" id="dog" value="false"
                                        class="wizard-form-radio" aria-invalid="false">
                                 <label for="dog">
-                                    <img src="assets/media/images/radio-icon-2.png" alt="">
+                                    <img src="{{asset('frontend/assets/media/images/radio-icon-2.png')}}" alt="">
                                     Dog
                                 </label>
                             </p>
@@ -66,7 +66,7 @@
                                 <input type="radio" name="petRadio" id="other" value="true"
                                        class="wizard-form-radio" aria-invalid="false">
                                 <label for="other">
-                                    <img src="assets/media/images/radio-icon-3.png" alt="">
+                                    <img src="{{asset('frontend/assets/media/images/radio-icon-3.png')}}" alt="">
                                     Other
                                 </label>
                             </p>
@@ -142,7 +142,7 @@
                                 <input type="radio" name="doctorRadio" id="home" value="true"
                                        class="wizard-form-radio" checked aria-invalid="false">
                                 <label for="home" class="fw-600">
-                                    <img src="assets/media/images/doctor-1.png" alt="" class="radio-image-2">
+                                    <img src="{{asset('frontend/assets/media/images/doctor-1.png')}}" alt="" class="radio-image-2">
                                     Home
                                 </label>
                             </p>
@@ -150,7 +150,7 @@
                                 <input type="radio" name="doctorRadio" id="clinic" value="false"
                                        class="wizard-form-radio" aria-invalid="false">
                                 <label for="clinic" class="fw-600">
-                                    <img src="assets/media/images/doctor-2.png" alt="" class="radio-image-2">
+                                    <img src="{{asset('frontend/assets/media/images/doctor-2.png')}}" alt="" class="radio-image-2">
                                     Pet Clinic
                                 </label>
                             </p>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-11">
-                    <form action="https://uiparadox.co.uk/public/templates/pet-haven/contact.html" method="post" class="reservation-form">
+                    <form action="" method="post" class="reservation-form">
                         <div class="row row-gap-4">
                             <div class="col-md-6">
                                 <div class="input-block mb-8">
@@ -211,31 +211,31 @@
     <!-- TESTIMONIALS SECTION START -->
     <section class="testimonial-sec py-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row row-gap-4 justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-8 col-10">
                     <div class="map-wrapper">
                         <div class="map-image">
-                            <img src="assets/media/images/map.png" alt="">
+                            <img src="{{asset('frontend/assets/media/images/map.png')}}" alt="">
                             <div class="feedback-user">
-                                <a href="javascript:;" data-slide="1"><img src="assets/media/images/test-1.png"
+                                <a href="javascript:;" data-slide="1"><img src="{{asset('frontend/assets/media/images/test-1.png')}}"
                                                                            alt=""></a>
-                                <a href="javascript:;" data-slide="2"><img src="assets/media/images/test-2.png"
+                                <a href="javascript:;" data-slide="2"><img src="{{asset('frontend/assets/media/images/test-2.png')}}"
                                                                            alt=""></a>
-                                <a href="javascript:;" data-slide="3"><img src="assets/media/images/test-3.png"
+                                <a href="javascript:;" data-slide="3"><img src="{{asset('frontend/assets/media/images/test-3.png')}}"
                                                                            alt=""></a>
-                                <a href="javascript:;" data-slide="4"><img src="assets/media/images/test-4.png"
+                                <a href="javascript:;" data-slide="4"><img src="{{asset('frontend/assets/media/images/test-4.png')}}"
                                                                            alt=""></a>
                             </div>
                         </div>
                         <div class="feedback-user-nav">
-                            <img src="assets/media/images/test-1.png" alt="">
-                            <img src="assets/media/images/test-2.png" alt="">
-                            <img src="assets/media/images/test-3.png" alt="">
-                            <img src="assets/media/images/test-4.png" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-1.png')}}" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-2.png')}}" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-3.png')}}" alt="">
+                            <img src="{{asset('frontend/assets/media/images/test-4.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -256,7 +256,7 @@
                                 Cras eu odio sit amet.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-7.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-7.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Rickey James</h6>
                                     <p class="fw-500">Chief of Staff</p>
@@ -274,7 +274,7 @@
                                 Cras eu odio sit amet.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-6.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-6.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Mary Jane</h6>
                                     <p class="fw-500">Chief of Staff</p>
@@ -292,7 +292,7 @@
                                 Cras eu odio sit amet.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-5.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-5.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Emma Claire</h6>
                                     <p class="fw-500">Chief of Staff</p>
@@ -310,7 +310,7 @@
                                 congue purus iaculison id.
                             </p>
                             <div class="d-flex align-items-center gap-12">
-                                <img src="assets/media/user/user-8.png" alt="" class="user-image br-64">
+                                <img src="{{asset('frontend/assets/media/user/user-8.png')}}" alt="" class="user-image br-64">
                                 <div>
                                     <h6 class="fw-700 medium-black mb-4p">Sophie Lynn</h6>
                                     <p class="fw-500">Chief of Staff</p>

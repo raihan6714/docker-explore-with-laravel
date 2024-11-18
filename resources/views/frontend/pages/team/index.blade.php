@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 d-sm-block d-none">
                         <div class="title-image text-end">
-                            <img src="assets/media/backgrounds/banner-image.png" alt="">
+                            <img src="{{asset('frontend/assets/media/backgrounds/banner-image.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -26,17 +26,17 @@
     <!-- OUR TEAM SECTION START -->
     <section class="team-page pt-40 pb-80">
         <div class="elements">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="" class="d-sm-block d-none">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row row-gap-4">
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-1.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-1.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -79,7 +79,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-2.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-2.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -122,7 +122,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-3.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-3.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -165,7 +165,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-4.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-4.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -208,7 +208,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-5.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-5.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -251,7 +251,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-7.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-7.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -294,7 +294,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-8.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-8.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">
@@ -337,7 +337,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member-block mb-8">
                         <div class="image-box mb-24">
-                            <img src="assets/media/team/team-6.png" class="w-100" alt="">
+                            <img src="{{asset('frontend/assets/media/team/team-6.png')}}" class="w-100" alt="">
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <a href="#" class="bg-sec">

@@ -24,7 +24,7 @@
                             sitagi amet diam.
                         </p>
                         <div class="banner-btn mb-64">
-                            <a href="reservation.html" class="cus-btn-2">
+                            <a href="{{ route('appointment') }}" class="cus-btn-2">
                                 <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -270,7 +270,7 @@
                             id. Maecenas eu lorem quisesdoi massal molestie. Cras eu
                             odio sit amet ipsum cursus for that gone pellentesquea.
                         </p>
-                        <a href="reservation.html" class="cus-btn primary">
+                        <a href="{{ route('appointment') }}" class="cus-btn primary">
                             <span class="text">Appointment</span>
                             <span class="circle"></span>
                         </a>
@@ -308,7 +308,7 @@
         </div>
         <div class="row row-gap-4">
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                <a href="service-detail.html" class="service-card h-100 w-100 bg-ter br-32">
+                <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 bg-ter br-32">
                     <div class="icon-box mb-24">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                              fill="none">
@@ -358,7 +358,7 @@
                 </a>
             </div>
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                <a href="service-detail.html" class="service-card h-100 w-100 card-2 bg-hex br-32">
+                <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 card-2 bg-hex br-32">
                     <div class="icon-box mb-24">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                              fill="none">
@@ -402,7 +402,7 @@
                 </a>
             </div>
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                <a href="service-detail.html" class="service-card h-100 w-100 card-3 bg-quant br-32">
+                <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 card-3 bg-quant br-32">
                     <div class="icon-box mb-24">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                              fill="none">
@@ -446,7 +446,7 @@
                 </a>
             </div>
             <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-                <a href="service-detail.html" class="service-card h-100 w-100 card-4 br-32">
+                <a href="{{ route('service-detail') }}" class="service-card h-100 w-100 card-4 br-32">
                     <div class="icon-box mb-24">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
                              fill="none">
@@ -1040,7 +1040,7 @@
                             </div>
                         </li>
                     </ul>
-                    <a href="reservation.html" class="cus-btn-2 m-auto">
+                    <a href="{{ route('appointment') }}" class="cus-btn-2 m-auto">
                         <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -1124,7 +1124,7 @@
                             </div>
                         </li>
                     </ul>
-                    <a href="reservation.html" class="cus-btn-2 m-auto">
+                    <a href="{{ route('appointment') }}" class="cus-btn-2 m-auto">
                         <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -1208,7 +1208,7 @@
                             </div>
                         </li>
                     </ul>
-                    <a href="reservation.html" class="cus-btn-2 m-auto">
+                    <a href="{{ route('appointment') }}" class="cus-btn-2 m-auto">
                         <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -1252,7 +1252,7 @@
                             We have an experienced qualified team to take care of your
                             best friend
                         </p>
-                        <a href="team.html" class="cus-btn">
+                        <a href="{{ route('team') }}" class="cus-btn">
                             <span class="text">View All Team</span>
                             <span class="circle"></span>
                         </a>

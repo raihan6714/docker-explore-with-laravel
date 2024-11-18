@@ -55,7 +55,7 @@
                         Want to Keep <br>
                         Your Pet in, Our Center?
                     </h3>
-                    <a href="reservation.html" class="cus-btn">
+                    <a href="{{ route('appointment') }}" class="cus-btn">
                         <span class="text">Book Now</span>
                         <span class="circle"></span>
                     </a>
@@ -114,7 +114,7 @@
             <p class="medium-black">
                 @2024 All Rights Copyright
                 <a href="#" class="fw-700 color-sec"> Pet Haven.</a> Design &
-                Developed By UIPARADOX.
+                Developed By USS.
             </p>
         </div>
     </div>

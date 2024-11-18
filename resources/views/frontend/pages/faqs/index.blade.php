@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 d-sm-block d-none">
                         <div class="title-image text-end">
-                            <img src="assets/media/backgrounds/banner-image.png" alt="">
+                            <img src="{{asset('frontend/assets/media/backgrounds/banner-image.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -26,9 +26,9 @@
     <!-- FAQ's SECTION START -->
     <section class="faqs-section py-80">
         <div class="elements">
-            <img src="assets/media/vector/cat-vector.png" alt="" class="d-sm-block d-none">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
-            <img src="assets/media/vector/foot-icon-1.png" alt="">
+            <img src="{{asset('frontend/assets/media/vector/cat-vector.png')}}" alt="" class="d-sm-block d-none">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
+            <img src="{{asset('frontend/assets/media/vector/foot-icon-1.png')}}" alt="">
         </div>
         <div class="container-fluid-2">
             <div class="row justify-content-center">

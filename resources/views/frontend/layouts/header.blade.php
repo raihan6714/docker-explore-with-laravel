@@ -6,50 +6,49 @@
                 <div class="main-menu__nav">
                     <ul class="main-menu__list">
                         <li>
-                            <a href="index.html" class="active">Home</a>
+                            <a href="{{ url('/') }}" class="active">Home</a>
                         </li>
                         <li class="dropdown">
                             <a href="javascript:void(0);">Shop</a>
                             <ul>
-                                <li><a href="shop.html">Shop Grid</a></li>
-                                <li><a href="shop-detail.html">Shop Detail</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="{{ route('shop') }}">Product</a></li>
+                                <li><a href="{{ route('checkout') }}">Checkout</a></li>
+                                <li><a href="{{ route('pricing') }}">Pricing</a></li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
-                            <a href="javascript:void(0);">Blogs</a>
-                            <ul>
-                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                <li><a href="blog-grid-sidebar.html" >Blog Grid Sidebar</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
+                            <a href="{{ route('blog') }}">Blogs</a>
+{{--                            <ul>--}}
+{{--                                <li><a href="">Blog</a></li>--}}
+{{--                                <li><a href="blog-grid-sidebar.html" >Blog Grid Sidebar</a></li>--}}
+{{--                                <li><a href="blog-detail.html">Blog Detail</a></li>--}}
+{{--                            </ul>--}}
                         </li>
-                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="{{ route('appointment') }}">Appointment</a></li>
                         <li class="dropdown">
-                            <a href="javascript:void(0);">Pages</a>
+                            <a href="javascript:void(0);">Services</a>
                             <ul>
-                                <li><a href="service-detail.html">Services Detail</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="account.html">Account</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="faqs.html">FAQ's</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
+{{--                                <li><a href="{{ route('services') }}">Services Detail</a></li>--}}
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('team') }}">Team</a></li>
+                                <li><a href="{{ route('about') }}">Account</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+{{--                                <li><a href="{{ route('about') }}">Gallery</a></li>--}}
+                                <li><a href="{{ route('faqs') }}">FAQ's</a></li>
+                                <li><a href="{{ route('error') }}">404</a></li>
+{{--                                <li><a href="{{ route('blog') }}">Coming Soon</a></li>--}}
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-            <a href="index.html" class="d-flex align-items-center header-logo-box">
-                <img src="{{asset('frontend/assets/media/logo.png')}} " alt="/logo" class="header-logo">
+            <a href="{{ url('/') }}" class="d-flex align-items-center header-logo-box">
+                <img src="{{asset('frontend/assets/media/logo.png')}}" alt="/logo" class="header-logo">
             </a>
             <div class="main-menu__right">
                 <div class="header-icons d-sm-flex d-none align-items-center gap-16">
-                    <a href="account.html" class="icon-box">
+                    <a href="{{ route('login') }}" class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill="none">
                             <path
