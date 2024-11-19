@@ -18,22 +18,23 @@
             <div class="row row-gap-4 mt-5">
                 <div class="col-xl-8 offset-xl-2 mt-5">
                     <div class="account account-1 br-12 p-32">
-                        <h4 class="medium-black fw-700 mb-12">Login</h4>
-                        <p class="mb-32">Please Enter your detail to Sign in.</p>
+                        <a href="{{ url('/') }}" class="d-flex justify-content-center header-logo-box mb-3">
+                            <img src="{{asset('frontend/assets/media/logo.png')}}" alt="/logo" class="header-logo">
+                        </a>
+                        <h4 class="medium-black fw-700 mb-12 text-center">Login</h4>
+                        <p class="mb-32 text-center">Please Enter your detail to Sign in.</p>
                         <form action="{{ route('login') }}" method="post" class="blog-form">
                             @csrf
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <a href="#" class="link-btn fw-500"><img src="{{asset('frontend/assets/media/icons/google-icon.png')}}"
-                                                                             alt=""> Login with Google</a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="#" class="link-btn fw-500 mt-sm-0 mt-16"><img
-                                            src="{{asset('frontend/assets/media/icons/fb-icon.png')}}" alt=""> Login with Facebook</a>
-                                </div>
-                                <div class="col-sm-12">
-                                    <p class="or mb-12">Or</p>
-                                </div>
+{{--                                <div class="col-sm-6">--}}
+{{--                                    <a href="#" class="link-btn fw-500"><img src="{{asset('frontend/assets/media/icons/google-icon.png')}}" alt=""> Login with Google</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-6">--}}
+{{--                                    <a href="#" class="link-btn fw-500 mt-sm-0 mt-16"><img src="{{asset('frontend/assets/media/icons/fb-icon.png')}}" alt=""> Login with Facebook</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-sm-12">--}}
+{{--                                    <p class="or mb-12">Or</p>--}}
+{{--                                </div>--}}
                                 <div class="col-sm-12">
                                     <div class="input-block mb-24">
                                         <input type="email" name="email" required class="form-control form-control-2 bg-white" autofocus autocomplete="username" placeholder="Your Email">
@@ -47,7 +48,7 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="input-block mb-24">
-                                        <input type="password" class="form-control form-control-2 bg-white password-input" id="password" name="password" placeholder="••••••••" required autocomplete="current-password">
+                                        <input type="password" class="form-control form-control-2 bg-white password-input" id="password" name="password" placeholder="Password" required autocomplete="current-password">
                                         <i class="fas fa-eye-slash" id="eye"></i>
                                     </div>
                                 </div>
