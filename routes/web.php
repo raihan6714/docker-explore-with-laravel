@@ -1,6 +1,13 @@
 <?php
 
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\PrescriptionController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -23,7 +30,17 @@ Route::get('/contact',[HomeController::class,'contact'])->name('contact');
 Route::get('/faqs',[HomeController::class,'faqs'])->name('faqs');
 Route::get('/error',[HomeController::class,'error'])->name('error');
 
-Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+    Route::resource('service', ServiceController::class);
+    Route::resource('appointment', AppointmentController::class);
+    Route::resource('patient', PatientController::class);
+    Route::resource('client', ClientController::class);
+    Route::resource('invoice', InvoiceController::class);
+    Route::resource('prescription', PrescriptionController::class);
+    Route::resource('inventory-items', InventoryController::class);
+});
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
