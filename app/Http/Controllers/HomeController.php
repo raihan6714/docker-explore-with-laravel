@@ -2,10 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
+    /**
+     * Write code on Method
+     *
+     * @return Factory|View|Application()
+     */
+    public function dashboard(Request $request): Factory|View|Application
+    {
+        flash()->success('Login Successfully');
+        return view('backend.pages.dashboard.dashboard');
+    }
+
     public function home()
     {
         return view('frontend.pages.home.index');
@@ -29,12 +44,7 @@ class HomeController extends Controller
     public function pricing()
     {
         return view('frontend.pages.pricing.index');
-    }
-
-    public function about()
-    {
-        return view('frontend.pages.about.index');
-    }
+    }git 
 
     public function blog()
     {
@@ -46,14 +56,19 @@ class HomeController extends Controller
         return view('frontend.pages.blogDetail.index');
     }
 
-    public function serviceDetail()
+    public function about()
     {
-        return view('frontend.pages.serviceDetail.index');
+        return view('frontend.pages.about.index');
     }
 
     public function appointment()
     {
         return view('frontend.pages.appointment.index');
+    }
+
+    public function serviceDetail()
+    {
+        return view('frontend.pages.serviceDetail.index');
     }
 
     public function team()
