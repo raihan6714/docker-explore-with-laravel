@@ -44,7 +44,7 @@ class HomeController extends Controller
     public function pricing()
     {
         return view('frontend.pages.pricing.index');
-    }git 
+    }
 
     public function blog()
     {

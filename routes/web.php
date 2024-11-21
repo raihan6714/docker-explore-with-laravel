@@ -23,7 +23,7 @@ Route::get('/checkout',[HomeController::class,'checkout'])->name('checkout');
 Route::get('/blog',[HomeController::class,'blog'])->name('blog');
 Route::get('/blog-detail',[HomeController::class,'blogDetail'])->name('blog-detail');
 Route::get('/about',[HomeController::class,'about'])->name('about');
-Route::get('/appointment',[HomeController::class,'appointment'])->name('appointment');
+Route::get('/booking',[HomeController::class,'appointment'])->name('booking ');
 Route::get('/service-detail',[HomeController::class,'serviceDetail'])->name('service-detail');
 Route::get('/team',[HomeController::class,'team'])->name('team');
 Route::get('/contact',[HomeController::class,'contact'])->name('contact');
