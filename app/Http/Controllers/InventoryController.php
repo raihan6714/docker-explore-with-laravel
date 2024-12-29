@@ -20,7 +20,7 @@ class InventoryController extends Controller
      */
     public function create()
     {
-        return view('backend.pages.inventoryItems.create');
+        return view('backend.pages.inventoryItems.c reate');
     }
 
     /**

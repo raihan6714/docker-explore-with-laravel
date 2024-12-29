@@ -25,7 +25,7 @@
 {{--                                <li><a href="blog-detail.html">Blog Detail</a></li>--}}
 {{--                            </ul>--}}
                         </li>
-                        <li><a href="{{ route('appointment') }}">Appointment</a></li>
+                        <li><a href="{{ route('booking') }}">Appointment</a></li>
                         <li class="dropdown">
                             <a href="javascript:void(0);">Services</a>
                             <ul>

@@ -55,7 +55,7 @@
                         Want to Keep <br>
                         Your Pet in, Our Center?
                     </h3>
-                    <a href="{{ route('appointment') }}" class="cus-btn">
+                    <a href="{{ route('booking') }}" class="cus-btn">
                         <span class="text">Book Now</span>
                         <span class="circle"></span>
                     </a>
